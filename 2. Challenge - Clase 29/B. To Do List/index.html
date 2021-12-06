@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <!-- Nuestro CSS -->
+    <link rel="stylesheet" href="./style.css" />
+    <title>To Do List:</title>
+  </head>
+  <body>
+    <header>
+      <h1>Daily Planning:</h1>
+    </header>
+
+    <main class="container">
+      <section class="inputSection">
+        <form id="newTask">
+          <h2>New Task:</h2>
+          <input type="text" id="newTaskInput" placeholder="Add a new task" />
+          <button id="newTaskButton" class="add">
+            <i class="fas fa-plus-circle"></i>
+          </button>
+        </form>
+
+        <div id="emptyTask" class="emptyAlert hide">
+          The task cannot be empty.
+        </div>
+      </section>
+
+      <section class="tasksSection">
+        <h2>Things to do:</h2>
+        <div id="tasks">
+          <div id="container" class="container">
+            <input type="text" class="taskInput" value="Mock Task" readonly />
+            <div class="btns">
+              <button class="edit">
+                <i class="fas fa-edit"></i>
+              </button>
+              <button class="scrap">
+                <i class="fas fa-strikethrough"></i>
+              </button>
+              <button class="erase">
+                <i class="fas fa-eraser"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
