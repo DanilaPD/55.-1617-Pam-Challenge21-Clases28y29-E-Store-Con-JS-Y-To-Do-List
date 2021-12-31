@@ -1,129 +1,78 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta
-      description="¡Bienvenido a Momento T! Tu entretenimiento asegurado para todas tus tardes."
-    />
-    <meta author="Danila Pérez Díaz" />
-    <meta
-      keywords="Charlas, videos, juegos, algo de Cha Cha Cha y mucho más."
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- BootStrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
+  <meta description="¡Bienvenido a Momento T! Tu entretenimiento asegurado para todas tus tardes." />
+  <meta author="Danila Pérez Díaz" />
+  <meta keywords="Charlas, videos, juegos, algo de Cha Cha Cha y mucho más." />
 
-    <!-- Favicon -->
-    <link rel="icon" href="./Assets/favicon.ico" type="image/x-icon" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+  <!-- BootStrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
 
-    <!-- FontAwesome -->
-    <link
-      rel="stylesheet"
-      href="//use.fontawesome.com/releases/v5.0.7/css/all.css"
-    />
+  <!-- Favicon -->
+  <link rel="icon" href="./Assets/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-    <!-- CSS propio -->
-    <link rel="stylesheet" href="./style.css" />
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css" />
 
-    <title>Lo mejor de la web</title>
-  </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-light bg-light fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="./index.html">
-            <img
-              class="logoNav"
-              src="./Assets/favicon.ico"
-              alt="accesoAinicio"
-            />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="offcanvas offcanvas-end"
-            tabindex="-1"
-            id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel"
-          >
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
-              <button
-                type="button"
-                class="btn-close text-reset"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="./index.html"
-                    >Home</a
-                  >
-                </li>
-                <!-- <li class="nav-item">
+  <!-- CSS propio -->
+  <link rel="stylesheet" href="./style.css" />
+
+  <title>Lo mejor de la web</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">
+          <img class="logoNav" src="./Assets/favicon.ico" alt="accesoAinicio" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <!-- <li class="nav-item">
                     <a class="nav-link" href="#">Link</a>
                   </li> -->
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="offcanvasNavbarDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Explorá nuestra website
-                  </a>
-                  <ul
-                    class="dropdown-menu"
-                    aria-labelledby="offcanvasNavbarDropdown"
-                  >
-                    <li>
-                      <a class="dropdown-item" href="./novedades.html"
-                        >Novedades</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="./loMejorDeLaWeb.html"
-                        >Lo mejor de la web</a
-                      >
-                    </li>
-                    <li>
-                      <hr class="dropdown-divider" />
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="./contactanos.html"
-                        >Contactanos</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-              <!-- <form class="d-flex">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Explorá nuestra website
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="./novedades.html">Novedades</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./loMejorDeLaWeb.html">Lo mejor de la web</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./contactanos.html">Contactanos</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <!-- <form class="d-flex">
                   <input
                     class="form-control me-2"
                     type="search"
@@ -134,108 +83,126 @@
                     Search
                   </button>
                 </form> -->
-            </div>
           </div>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
+  </header>
 
-    <main>
-      <section class="intro">
+  <main>
+    <section class="intro">
+      <a href="./index.html">
         <h1>Momento T</h1>
-        <img src="./Assets/Logo.jpeg" alt="" class="logoIntro" />
-        <h2>Lo mejor de la Web</h2>
-        <img
-          src="./Assets/hacker-loMejorDeLaWeb.gif"
-          class="loMejorDeLaWebPic"
-          alt=""
-        />
-      </section>
+      </a>
 
-      <div class="memes">
-        <h2>Los mejores memes de este último tiempo</h2>
-        <div class="memesContainer">
-          <img src="" alt="" />
-        </div>
+      <h2>Lo mejor de la Web</h2>
+      <img src="./Assets/hacker-loMejorDeLaWeb.gif" class="loMejorDeLaWebPic" alt="" />
+    </section>
+
+    <section class="memes">
+      <h2>Los mejores memes de este último tiempo</h2>
+      <div class="memesContainer">
+        <img src="./Assets/1.jpeg" alt="" />
+        <img src="./Assets/2.jpeg" alt="">
+        <img src="./Assets/3.jpeg" alt="">
+        <img src="./Assets/4.jpeg" alt="">
+        <img src="./Assets/5.jpeg" alt="">
+        <img src="./Assets/6.jpeg" alt="">
+        <img src="./Assets/7.jpeg" alt="">
       </div>
+      <p class="p1">Sí, me gusta The Office</p>
+      <p class="p2">Listo, lo dije</p>
+    </section>
 
-      <div class="videosDeYoutube">
-        <h2>Los mejores videos de YouTube</h2>
+    <section class="youtubers">
+      <h2>Los mejores canales de Youtube</h2>
+
+      <h3>MotorSports Planet</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/6mizJKgRdrg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      <h3>Historias innecesarias</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/e21aLVxgIa4" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+
+      <h3>The Wild Project</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/EO-67BRLVfw" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+
+      <h3>Ezzequiel</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/OdAQrzhXzgY" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+
+      <h3>FTotal</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/FH9Acab-qD4" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+
+    </section>
+
+    <section class="canciones">
+      <h2>Las mejores canciones de todos los tiempos</h2>
+      <h3>Chusmeá nuestra lista de Spotify</h3>
+
+     
+        <iframe src="https://open.spotify.com/embed/playlist/4vmz2MCW5HGGZl1Uq7T5Vr?utm_source=generator" width="80%"
+          height="380" frameBorder="0" text-align="center" allowfullscreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+   
+
+      <p>¿Te gustaría proponer alguna canción más para nuestra mega lista?</p>
+    </section>
+
+    <section class="juegos">
+      <h2>Nuestro Top5 de videojuegos</h2>
+      <div class="gamesList">
+        <h3>Age Of Empires</h3>
+        <img src="./Assets/Age of empires.jpg" alt="" />
+
+        <h3>Counter Strike</h3>
+        <img src="./Assets/Counter Strike.jpg" alt="" />
+
+        <h3>Euro Track Simulator</h3>
+        <img src="./Assets/Euro Track Simulator.jpg" alt="" />
+
+        <h3>GeoGuesser</h3>
+        <img src="./Assets/Geoguesser.jpeg" alt="" />
+
+        <h3>League of Legends</h3>
+        <img src="./Assets/League of Legends.jpg" alt="" />
       </div>
+    </section>
 
-      <div class="canciones">
-        <h2>Las mejores canciones de todos los tiempos</h2>
-        <h3>Chusmeá nuestra lista de Spotify</h3>
-        <img src="./Assets/Spotify.PNG" alt="" />
-        <button>
-          <a
-            href="https://open.spotify.com/playlist/4vmz2MCW5HGGZl1Uq7T5Vr?si=ZwmLoH0WSyquIgW38WVR_w"
-          ></a>
-        </button>
-        <p>¿Te gustaría proponer alguna canción más para nuestra mega lista?</p>
-      </div>
+    <section class="podcasts">
+      <h2>¡También escuchamos algún que otro Podcast!</h2>
+      <h3>Acá van los que nos gustan:</h3>
+      <p>The Wild Project</p>
+      <iframe src="https://open.spotify.com/embed/show/5iKz9gAsyuQ1xLG6MFLtQg?utm_source=generator" width="80%" height="232" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
 
-      <div class="juegos">
-        <h2>Nuestro Top5 de videojuegos</h2>
-        <div class="gamesList">
-          <h3>Age Of Empires</h3>
-          <img src="./Assets/Age of empires.jpg" alt="" />
-
-          <h3>Counter Strike</h3>
-          <img src="./Assets/Counter Strike.jpg" alt="" />
-
-          <h3>Euro Track Simulator</h3>
-          <img src="./Assets/Euro Track Simulator.jpg" alt="" />
-
-          <h3>GeoGuesser</h3>
-          <img src="./Assets/Geoguesser.jpeg" alt="" />
-
-          <h3>League of Legends</h3>
-          <img src="./Assets/League of Legends.jpg" alt="" />
-        </div>
-      </div>
-
-      <div class="podcasts">
-        <h2>¡También escuchamos algún que otro Podcast!</h2>
-        <h3>Acá van los que nos gustan:</h3>
-        <p>The Wild Project</p>
-        <img src="./Assets/Podcast.PNG" alt="" />
-        <button>
-          <a href="https://open.spotify.com/show/5iKz9gAsyuQ1xLG6MFLtQg"></a>
-        </button>
-      </div>
-
-      <div class="otrosCanalesDeTwich">
-        <h2>Twitch siempre</h2>
-        <h3>Estos son algunos de los canales que nos gustan:</h3>
-      </div>
-
-      <div class="lasMejoresPeliculas"></div>
-
-      <div class="lasMejoresSeries"></div>
-
-      <div class="elMejorAnime"></div>
-    </main>
+      <p>Basta, chicos: La vida de Ricardo Fort</p>
+      <iframe src="https://open.spotify.com/embed/show/5TXo0pstCnuYZVjBj2uC3T?utm_source=generator" width="80%"
+        height="232" frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    </section>
 
     <footer>
       <p class="p1Footer">
         Momento T es una propiedad registrada de Tavo's Company &copy; San
-        Fernando, Buenos Aires, 2021.
+        Fernando, Buenos Aires, 2022.
       </p>
       <p class="p2Footer">
         Hecho por Danila Pérez Díaz para
-        <a href="https://www.twitch.tv/momento_t?sr=a" target="_blank"
-          >Momento T</a
-        >
+        <a href="https://www.twitch.tv/momento_t?sr=a" target="_blank">Momento T</a>
       </p>
     </footer>
 
     <script src="./index.js"></script>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+</body>
+
 </html>
